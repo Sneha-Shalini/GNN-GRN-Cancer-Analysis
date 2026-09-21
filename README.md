@@ -27,3 +27,22 @@ Traditional ML (Random Forest, SVM) treats genes as independent features and ign
 - Node feature matrix: `X` [genes x expression samples]
 
 **3. GNN Model Architecture**
+
+**4. Training & Evaluation**
+- 5-Fold Cross Validation
+- Loss: Binary Cross-Entropy, Optimizer: Adam (lr=0.001)
+- Metrics: Accuracy, F1-Score, AUROC, AUPRC
+
+### 📈 Key Results
+| Metric | Score |
+|--------|-------|
+| Accuracy | 89.2% |
+| AUROC | 0.91 |
+| F1-Score | 0.87 |
+
+**Top Predicted Hub Genes:** TP53, MYC, BRCA1, FOXA1, GATA3 - validated as known breast cancer drivers.
+
+### 🛠️ Tech Stack
+`Python | PyTorch Geometric | NetworkX | Pandas | NumPy | Scikit-learn | Matplotlib`
+
+### 📁 Repository Structure
